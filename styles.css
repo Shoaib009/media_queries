@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  background-color: gold;
+}
+.box:nth-of-type(2) {
+  background-color: dodgerblue;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    background-color: black;
+    color: white;
+  }
+}
+@media print {
+  body {
+    font-size: 12pt;
+  }
+}
